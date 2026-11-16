@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Leaf shape -->
+  <path d="M24 4C14 4 6 14 6 24c0 6 3 11.5 8 15.2V42a2 2 0 004 0v-1.2c1.9.8 4 1.2 6 1.2 12 0 20-10 20-18C44 12 34 4 24 4z" fill="#2d8f4e" opacity="0.15"/>
+  <path d="M24 6c-3 4-8 12-8 20 0 4 2 7.5 5 10" stroke="#2d8f4e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M24 6c3 4 8 12 8 20 0 4-2 7.5-5 10" stroke="#2d8f4e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Leaf veins -->
+  <path d="M24 12c-2 3-4.5 7-5 12" stroke="#2d8f4e" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M24 12c2 3 4.5 7 5 12" stroke="#2d8f4e" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M24 18c-1.5 2-3 5-3.5 9" stroke="#2d8f4e" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M24 18c1.5 2 3 5 3.5 9" stroke="#2d8f4e" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Center stem -->
+  <line x1="24" y1="6" x2="24" y2="38" stroke="#2d8f4e" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Small berry/dot accents -->
+  <circle cx="19" cy="20" r="2" fill="#e67e22" opacity="0.8"/>
+  <circle cx="29" cy="22" r="1.8" fill="#e74c3c" opacity="0.7"/>
+  <circle cx="22" cy="28" r="1.5" fill="#e67e22" opacity="0.6"/>
+</svg>

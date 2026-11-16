@@ -1,0 +1,48 @@
+{
+  "siteName": "Healthy Bites",
+  "tagline": {
+    "en": "Fresh, wholesome snacks delivered to you",
+    "fr": "Des collations saines et fraîches livrées chez vous",
+    "nl": "Verse, gezonde snacks bij u bezorgd"
+  },
+  "whatsappNumber": "32470123456",
+  "currency": "€",
+  "logo": "images/logo.svg",
+  "defaultLanguage": "en",
+  "languages": ["en", "fr", "nl"],
+
+  "serviceStatus": {
+    "open": true,
+    "message": {
+      "en": "We're taking a short break! Back on Monday, 25th Nov. See you soon!",
+      "fr": "Nous faisons une petite pause ! De retour lundi 25 nov. À bientôt !",
+      "nl": "We nemen een korte pauze! Terug op maandag 25 nov. Tot snel!"
+    }
+  },
+
+  "orderSchedule": {
+    "cutoffHour": 17,
+    "deliveryWindow": "17:00 – 21:00",
+    "timezone": "Europe/Brussels"
+  },
+
+  "deliveryInfo": {
+    "areas": ["Bruxelles / Brussel", "Ixelles / Elsene", "Saint-Gilles / Sint-Gillis", "Etterbeek", "Schaerbeek / Schaarbeek", "Uccle / Ukkel"],
+    "message": {
+      "en": "We currently deliver within select areas in Brussels.",
+      "fr": "Nous livrons actuellement dans certaines zones de Bruxelles.",
+      "nl": "We leveren momenteel in bepaalde wijken van Brussel."
+    },
+    "minOrder": 15
+  },
+
+  "paymentInfo": {
+    "upiId": "",
+    "methods": ["Bancontact", "Payconiq", "Bank transfer"],
+    "note": {
+      "en": "After placing your order on WhatsApp, we'll share payment details via Bancontact or bank transfer.",
+      "fr": "Après votre commande sur WhatsApp, nous partagerons les détails de paiement via Bancontact ou virement.",
+      "nl": "Na uw bestelling via WhatsApp delen we de betalingsgegevens via Bancontact of overschrijving."
+    }
+  }
+}

@@ -5,11 +5,20 @@
     "fr": "Des collations saines et fraîches livrées chez vous",
     "nl": "Verse, gezonde snacks bij u bezorgd"
   },
-  "whatsappNumber": "32470123456",
+  "whatsappNumber": "32XXX-XXX-XXX",
   "currency": "€",
   "logo": "images/logo.svg",
   "defaultLanguage": "en",
   "languages": ["en", "fr", "nl"],
+
+  "comingSoon": {
+    "enabled": true,
+    "message": {
+      "en": "We're preparing something delicious! Our healthy snack delivery service is launching soon in Brussels.",
+      "fr": "Nous préparons quelque chose de délicieux ! Notre service de livraison de snacks sains arrive bientôt à Bruxelles.",
+      "nl": "We bereiden iets lekkers voor! Onze gezonde snackbezorgservice komt binnenkort naar Brussel."
+    }
+  },
 
   "serviceStatus": {
     "open": true,

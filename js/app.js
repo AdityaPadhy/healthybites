@@ -25,6 +25,11 @@
 
     lang = localStorage.getItem('hb-lang') || config.defaultLanguage || 'en';
 
+    if (config.comingSoon && config.comingSoon.enabled) {
+      showComingSoon();
+      return;
+    }
+
     applyConfig();
     buildLangSwitcher();
     applyServiceStatus();
@@ -41,6 +46,38 @@
     document.getElementById('footerWa').href = 'https://wa.me/' + config.whatsappNumber;
     document.getElementById('footerYear').textContent = new Date().getFullYear();
     document.getElementById('footerBrand').textContent = config.siteName || 'Healthy Bites';
+  }
+
+  function showComingSoon() {
+    var overlay = document.getElementById('comingSoon');
+    overlay.hidden = false;
+
+    document.getElementById('comingSoonTitle').textContent = config.siteName || 'Healthy Bites';
+    document.getElementById('comingSoonMsg').textContent = localizedConfig(config.comingSoon.message);
+    document.title = (config.siteName || 'Healthy Bites') + ' — Coming Soon';
+
+    if (config.logo) {
+      var logo = overlay.querySelector('.coming-soon-logo');
+      if (logo) logo.src = config.logo;
+    }
+
+    // Language switcher on coming soon page
+    var langs = config.languages || ['en'];
+    if (langs.length > 1) {
+      var langContainer = document.getElementById('comingSoonLang');
+      langContainer.innerHTML = langs.map(function (l) {
+        return '<button class="lang-btn' + (l === lang ? ' active' : '') + '" data-lang="' + l + '">' + l + '</button>';
+      }).join('');
+
+      langContainer.addEventListener('click', function (e) {
+        var btn = e.target.closest('.lang-btn');
+        if (!btn || btn.dataset.lang === lang) return;
+        lang = btn.dataset.lang;
+        localStorage.setItem('hb-lang', lang);
+        langContainer.querySelectorAll('.lang-btn').forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+        document.getElementById('comingSoonMsg').textContent = localizedConfig(config.comingSoon.message);
+      });
+    }
   }
 
   // ===== I18N =====
